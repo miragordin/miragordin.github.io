@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amarante" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
 <title> Mira Gordin </title>
+<link rel="icon" type="image/x-icon" href="mag.png">
 <style>
 .column {
+  padding: 5% 0% 0% 0%;
   float: left;
   width: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; */
 }
 
 /* Clear floats after the columns */
@@ -16,20 +23,77 @@
   clear: both;
 }
 
-.cvlink {
-font-size:24px;
-margin: 5% 5% 5% 5%;
-}
 
 body {
-  margin: 5% 10% 10% 10%;
-  font-family: 'Crimson Text', serif;
-  font-size:20px;
+  margin: 0%;
+  font-family: 'Work Sans', sans-serif;
+  /* font-size:18px; */
+  font-size: 1.4vw;
 }
 
-h1 {
+
+h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 5%;
-	font-size: 48px;
+  font-family: 'Amarante', serif;
+	font-size: 54px;
+  font-size: 2vw;
+}
+
+ul {
+  line-height: 200%;
+  padding: 0% 5% 0% 5%;
+}
+
+
+li {
+      list-style: none;
+    }
+
+li:before {
+      /* For a round bullet */
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -20px;
+      top: -0px;
+      color: #838a2d;
+      font-size: 20px;
+    }
+
+.topnav {
+  background-color: #43480b;
+  background-image: url(bg3.jpg);
+  background-size: cover;
+  overflow: hidden;
+  /* background-color: #333; */
+  padding: 3% 5% 3% 5%;
+}
+
+.topnav a {
+  font-family: 'Amarante', serif;
+  float: right;
+  /* color: #f2f2f2; */
+  text-align: center;
+  padding: 0% 5% 0% 0%;
+  text-decoration: none;
+  font-size: 36px;
+  font-size: 2.5vw;
+  color: #ffffff
+  /* color: #838a2d; */
+}
+
+.topnav a:hover {
+  color: #939650;
+}
+
+.topnav a.home {
+  /* background-color: #04AA6D; */
+  /* color: white; */
+  font-size: 3.5vw;
 }
 	
 
@@ -38,7 +102,7 @@ h1 {
 a {
 	outline: none;
 	text-decoration: none;
-	color: #8065a6;
+	color: #838a2d;
 	padding: 2px 1px 0;
 }
 
@@ -55,8 +119,9 @@ a:focus {
 }
 
 a:hover {
-	border-bottom: 1px solid;     
-	background: #dccbf2;
+  color: #cfd1a0;
+	/* border-bottom: 1px solid;     
+	background: #dccbf2; */
 }
 
 a:active {
@@ -67,30 +132,129 @@ a:active {
 </head>
 
 <body>
-<center>
-<h1>Mira Gordin</h1>
-</center>
 
-<div class="row">
-  <div class="column">
-  <center>
-  <img src="mira_gordin.jpg" alt="Mira Gordin" style="width: 65%; height: auto; border-radius: 3%;">
-  </center>
+  <div class="topnav">
+    <a class="home" style="float: left;" href="#home">Mira Gordin</a>
+    <a style="float: right;" href="miriam_gordin_cv.pdf" target="_blank">CV</a>
+    <!-- <a href="#about">Research</a> -->
+    <!-- <a href="#about">About</a> -->
+    
   </div>
+
+
+  <!-- <center> -->
+
+<!-- </center> -->
+
+<div class="row", style="padding-left:2%;padding-right:2%;padding-bottom:5%">
+
+
   <div class="column">
-  I am a PhD student in the Program in Applied and Computational Mathematics at Princeton University. 
-  <br><br>
-  <b>Email:</b> magordin [at] princeton.edu
-  <br><br>  
-  <div class="cvlink">
-  <center><a href="miriam_gordin_cv.pdf",style="font-size:40px">CV</a></center>
-  </div>
+    <center>
+      
+    
+    <img src="mira_gordin.jpg" alt="Mira Gordin" style="width: 65%; height: auto; border-radius: 7%;">
+    </center>
+    
+    
+    </div>
+
+  <div class="column" 
+  >
+
   
-  </div>
+  I am a PhD candidate in the Program in Applied and Computational Mathematics at Princeton University, where my PhD advisor is <a href="https://web.math.princeton.edu/~rvan/">Ramon van Handel</a>.
+
+  <br><br>
+
+    My research is in probability theory and I enjoy working at the intersection of probability, geometry, and analysis.
+    
+    <br><br>
+    
+    Some topics I'm interested in are high-dimensional probability, concentration of measure, random walks on graphs and groups, notions of discrete curvature, and metric embeddings.
+
+    <br><br>
+
+    Before Princeton, I was an undergraduate student at Brown University and worked with <a href="https://www.brown.edu/academics/applied-mathematics/faculty/kavita-ramanan/home">Kavita Ramanan</a> on interacting particle systems and random walks on graphs.
+
+    
+    <br><br>
+
+    
+    <b>Email:</b> magordin [at] princeton [dot] edu  
+    
+    </div>
+  
+  
+</div>
+
+
+
+<div class="topnav"  id="talks" style="background-image: url(strip.jpg)">
+  <a class="home" style="float: left;" href="#talks">Recent & Upcoming Talks</a>
+  
 </div>
 
 
 
 
+  <ul>
 
+   
+
+<li><a href=" https://sites.google.com/view/paw-seminar">Probability and Analysis Webinar</a>, April 2024 (<a href="https://youtu.be/1lei74Jj520?feature=shared">Video</a> and <a href="slides/mira_paw_2024.pdf">Slides</a>)  </li>
+
+
+
+    <li>
+      Trimester Program: <i>Probability, geometric analysis and stochastic geometry</i>, Hausdorff Institute, Bonn, March 2024 (<a href="https://www.youtube.com/watch?v=eAZhh-w_tjY&ab_channel=HausdorffCenterforMathematics">Video</a>)
+      
+    </li>
+
+
+<li>PACM Colloquium, Princeton University, February 2024</li>
+
+
+<li>Analysis Seminar, Stony Brook University, January 2024</li>
+
+<li>Probability Seminar, Lehigh University, December 2023</li>
+
+
+
+</ul>
+
+
+
+<div class="topnav"  id="talks" style="background-image: url(bg-crop.jpg)">
+  <a class="home" style="float: left;" href="#talks">Other</a>
+
+  
+</div>
+
+<div style = "padding: 2% 5% 5% 5%;line-height: 150%;">
+I participated in a fall school on <a href="https://sites.google.com/view/paata/heat?authuser=0">Heat Flow, two-point inequalities, and beyond</a> where I gave two expository talks about the paper "Bourgain's slicing problem and KLS isoperimetry up to polylog" (B. Klartag, J. Lehec). You can find my slides for these talks <a href="slides/gordin_talk1.pdf">here</a> (background and main results) and <a href="slides/gordin_talk2.pdf">here</a> (some overview of the proofs).
+</div>
 </body>
+<!-- 
+<img src="bg-crop.jpg" alt="trees" style="width: 100%; height: auto;padding: 0%;"> -->
+
+
+<!-- 
+
+<div class="row", style="padding:5%">
+
+
+I believe in <a href="https://fardila.com/">Federico Ardila</a>'s axioms: 
+
+<br><br>
+Axiom 1. Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.
+<br><br>
+Axiom 2. Everyone can have joyful, meaningful, and empowering mathematical experiences.
+<br><br>
+Axiom 3. Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.
+<br><br>
+Axiom 4. Every student deserves to be treated with dignity and respect.
+
+</div>
+
+</body> -->
